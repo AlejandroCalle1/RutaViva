@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Paquetes de Viaje</title>
+</head>
+
+<body>
+    <header>
+         <h1><a href="index.html" class="titulo-link">Chronos travel</a></h1>
+
+
+        <nav> <!-- Barra de menu -->
+            <ul> <!-- UL lista desordenada, LI crea cada item -->
+                <li><a href="destinos_historicos.html">Destinos históricos</a></li>
+                <li><a href="destinos_futuristas.html">Destinos futuristas</a></li>
+                <li><a href="hoteles_paquetes_viajes.html"> Hoteles y paquetes de viaje</a></li>
+                <li><a href="reglas_viajes.html">Reglas para viajes en el tiempo</a></li>
+            </ul>
+        </nav>
+
+        <form action="login.html" style="margin: 0;">
+            <button type="submit" class="btn-ingresar">Ingresar</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="banner-pagina">
+            <span class="subtitulo-badge">Chronos Travel</span>
+            <h1>Hoteles y Paquetes de Viaje</h1>
+            <div class="linea-decorativa"></div>
+            <p>Explora nuestros paquetes de viaje y hoteles para una experiencia completa en tus viajes a través del tiempo.</p>
+        </section>
+
+         <section class="hoteles_destinos"> <!-- sección de hoteles de viaje -->
+            <h1>Paquetes de Viaje</h1>
+
+            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de hoteles -->
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel futurista bajo agua .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel futurista ciduad .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hoteles futuristas nave .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel medieval.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel piramides.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel romano.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+            
+            </div>
+            
+        </section>
+
+    
+        <section class="formulario-reserva">
+            <h2>Reserva tu viaje</h2>
+
+            <form> <!-- etiqueta que envuelve todos los campos del formulario -->
+                <label for ="nombre">Nombre completo:</label>  <!-- etiqueta para el campo de nombre, el atributo for se asocia con el id del input -->
+                <input type="text" id="nombre" name="nombre" required>  <!-- campo de texto para el nombre, el atributo required indica que es obligatorio -->
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino" required> <!-- lista desplegable para seleccionar el destino -->
+                    <option value="">Seleccione un destino</option>
+                    <option value="roma">Roma Antigua</option>
+                    <option value="egipto">Egipto Antiguo</option>
+                    <option value="futurista">Ciudad Futurista</option>
+                    <option value="medieval">Castillo Medieval</option>
+                    <option value="futurista_bajo_agua">Ciudad futurista bajo el agua</option>
+                    <option value="futurista_nave">Ciudad futurista en nave espacial</option>
+                </select>
+
+                <label for="fecha">Fecha de viaje:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            
+                <button type="submit">Reservar</button> <!-- botón para enviar el formulario -->
+            </form>
+        </section>
+    </main>
+
+    <footer> 
+        <p>&copy; 2024 Chronos Travel. Todos los derechos reservados.</p>  <!-- Pie de página con derechos de autor -->
+        <nav class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="destinos_historicos.html">Destinos históricos</a>
+            <a href="destinos_futuristas.html">Destinos futuristas</a>
+            <a href="reglas_viajes.html">Reglas para viajar</a>
+        </nav>
+        <p>Contáctanos:https://github.com/AlejandroCalle1/viajes-en-el-tiempo</p>
+    </footer>
+
+    
+    
+</body>
+</html>
