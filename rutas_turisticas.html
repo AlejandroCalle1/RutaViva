@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Turísticas - Ruta Viva</title>
+    <!-- Fuente Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos mínimos del filtro por categoría (nuevo). Cuando quieras, se pueden mover a css/estilos.css -->
+    <style>
+        .filtro-categorias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px auto 10px;
+            padding: 0 20px;
+        }
+        .filtro-btn {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 8px 18px;
+            border: 2px solid #2e7d5b;
+            border-radius: 999px;
+            background: transparent;
+            color: #2e7d5b;
+            cursor: pointer;
+        }
+        .filtro-btn:hover,
+        .filtro-btn:focus-visible,
+        .filtro-btn.activo {
+            background: #2e7d5b;
+            color: #fff;
+        }
+        .tarjeta-zigzag.oculta {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- use el mismo header que el index -->
+    <header>
+        <h1><a href="index.html" class="titulo-link">Ruta Viva</a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="rutas_turisticas.html">Rutas turísticas</a></li>
+                <li><a href="sobre_ruta_viva.html">Sobre Ruta Viva</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            </ul>
+        </nav>
+
+        <form action="login.html" style="margin: 0;">
+            <button type="submit" class="btn-ingresar">Ingresar</button>
+        </form>
+    </header>
+
+    <main>
+        <section class="banner-pagina"> <!--en este caso no utilziamos hero si no secciones para estas -->
+            <span class="subtitulo-badge">Ruta Viva</span>
+            <h1>Rutas Turísticas</h1>
+            <div class="linea-decorativa"></div>
+            <p>Elige una categoría y encuentra la ruta que quieres recorrer.</p>
+        </section>
+
+        <!-- Filtro por categoría (requerimiento: buscar rutas turísticas por categoría) -->
+        <div class="filtro-categorias" role="group" aria-label="Filtrar rutas por categoría">
+            <button type="button" class="filtro-btn activo" data-filtro="todas" aria-pressed="true">Todas</button>
+            <button type="button" class="filtro-btn" data-filtro="cultural" aria-pressed="false">Cultural</button>
+            <button type="button" class="filtro-btn" data-filtro="naturaleza" aria-pressed="false">Naturaleza</button>
+            <button type="button" class="filtro-btn" data-filtro="gastronomica" aria-pressed="false">Gastronómica</button>
+            <button type="button" class="filtro-btn" data-filtro="aventura" aria-pressed="false">Aventura</button>
+            <button type="button" class="filtro-btn" data-filtro="historica" aria-pressed="false">Histórica</button>
+            <button type="button" class="filtro-btn" data-filtro="religiosa" aria-pressed="false">Religiosa</button>
+        </div>
+
+        <!-- Sección de rutas en formato zigzag (cada tarjeta lleva su categoría en data-categoria) -->
+        <section class="contenedor-destinos-historicos">
+
+            <!-- Ruta 1 Imagen Izquierda-->
+            <article class="tarjeta-zigzag" data-categoria="cultural">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-cultural.jpg -->
+                    <img src="img/ruta-cultural.jpg" alt="Ruta cultural">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta cultural: museos, plazas y arte local</h2>
+                    <p>Recorre museos, plazas y espacios donde se conserva y se celebra la cultura del lugar. Una ruta para conocer su arte, sus tradiciones y a las personas que las mantienen vivas.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+            <!-- Ruta 2 mismo perfil Invertido -->
+            <article class="tarjeta-zigzag invertido" data-categoria="naturaleza">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-naturaleza.jpg -->
+                    <img src="img/ruta-naturaleza.jpg" alt="Ruta de naturaleza">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta de naturaleza: senderos y miradores</h2>
+                    <p>Camina por senderos rodeados de vegetación y llega a miradores con vistas abiertas al paisaje. Ideal para quienes buscan aire libre y tranquilidad.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+            <!-- Ruta 3 Imagen Izquierda -->
+            <article class="tarjeta-zigzag" data-categoria="gastronomica">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-gastronomica.jpg -->
+                    <img src="img/ruta-gastronomica.jpg" alt="Ruta gastronómica">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta gastronómica: sabores de la región</h2>
+                    <p>Prueba platos típicos, visita mercados y conoce los productos que definen la cocina local. Una ruta pensada para disfrutar con todos los sentidos.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+            <!-- Ruta 4 derecha-->
+            <article class="tarjeta-zigzag invertido" data-categoria="aventura">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-aventura.jpg -->
+                    <img src="img/ruta-aventura.jpg" alt="Ruta de aventura">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta de aventura: montaña y actividades al aire libre</h2>
+                    <p>Vive el territorio de una forma más activa, con recorridos por montaña y actividades al aire libre para quienes disfrutan de la emoción y el movimiento.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+            <!-- Ruta 5 izquierda -->
+            <article class="tarjeta-zigzag" data-categoria="historica">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-historica.jpg -->
+                    <img src="img/ruta-historica.jpg" alt="Ruta histórica">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta histórica: casas antiguas y monumentos</h2>
+                    <p>Descubre la historia del lugar a través de sus calles, casas antiguas y monumentos. Una ruta para entender cómo se formó lo que hoy visitas.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+            <!-- Ruta 6 derecha -->
+            <article class="tarjeta-zigzag invertido" data-categoria="religiosa">
+                <div class="imagen-zigzag">
+                    <!-- IMAGEN PENDIENTE: img/ruta-religiosa.jpg -->
+                    <img src="img/ruta-religiosa.jpg" alt="Ruta religiosa">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta religiosa: iglesias y lugares de fe</h2>
+                    <p>Visita iglesias, templos y lugares de fe con valor arquitectónico y espiritual, y conoce las tradiciones que se celebran en ellos.</p>
+                    <a href="#" class="btn-reserva">Ver ruta</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ruta Viva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { // espera a que el documento esté cargado
+            const tarjetas = document.querySelectorAll(".tarjeta-zigzag"); // todas las tarjetas zigzag
+
+            // ---- Animación de scroll (la misma del proyecto anterior) ----
+            const observador = new IntersectionObserver((entradas) => { // vigila cuándo una tarjeta entra a la pantalla
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) { // la tarjeta ya es visible
+                        entrada.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 }); // reacciona cuando el 20% de la tarjeta se ve
+
+            tarjetas.forEach((tarjeta) => observador.observe(tarjeta));
+
+            // ---- Filtro por categoría (nuevo) ----
+            const botones = document.querySelectorAll(".filtro-btn");
+
+            function filtrar(categoria) {
+                let posicion = 0;
+                tarjetas.forEach((tarjeta) => {
+                    const coincide = categoria === "todas" || tarjeta.dataset.categoria === categoria;
+                    tarjeta.classList.toggle("oculta", !coincide);
+                    if (coincide) {
+                        // mantiene el zigzag: la imagen alterna izquierda/derecha entre las tarjetas visibles
+                        tarjeta.classList.toggle("invertido", posicion % 2 === 1);
+                        posicion++;
+                    }
+                });
+            }
+
+            botones.forEach((boton) => {
+                boton.addEventListener("click", function() {
+                    botones.forEach((b) => {
+                        b.classList.remove("activo");
+                        b.setAttribute("aria-pressed", "false");
+                    });
+                    boton.classList.add("activo");
+                    boton.setAttribute("aria-pressed", "true");
+                    filtrar(boton.dataset.filtro);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Por favor, ingresa tu correo y contraseña.');
       } else {
         localStorage.setItem('usuarioActivo', email);
-        alert(`¡Bienvenido/a a Chronos Travel, ${email}!`);
+        alert(`¡Bienvenido/a a Ruta Viva, ${email}!`);
         window.location.href = "index.html"; // Redirige al inicio
       }
     });

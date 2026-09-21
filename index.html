@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes en el tiempo</title>
+    <title>Ruta Viva</title>
     <link rel="stylesheet" href="css/estilos.css">  <!-- Le dice al navegador: "descarga este archivo en segundo plano, pero no lo ejecutes todavía — espera a que todo el HTML termine de cargar primero, y ejecútalo justo después". -->
     <script src = "js/acordeon.js"  defer></script>  
 </head>
 <body>
 
     <header>
-        <h1><a href="index.html" class="titulo-link">Chronos travel</a></h1>
+        <h1><a href="index.html" class="titulo-link">Ruta Viva</a></h1>
 
         <nav> <!-- Barra de menu -->
             <ul> <!-- UL lista desordenada, LI crea cada item -->
-                <li><a href="destinos_historicos.html">Destinos históricos</a></li>
-                <li><a href="destinos_futuristas.html">Destinos futuristas</a></li>
-                <li><a href="hoteles_paquetes_viajes.html"> Hoteles y paquetes de viaje</a></li>
-                <li><a href="reglas_viajes.html">Reglas para viajes en el tiempo</a></li>
+                <li><a href="rutas_turisticas.html">Rutas turísticas</a></li>
+                <li><a href="sobre_ruta_viva.html">Sobre Ruta Viva</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
             </ul>
         </nav>
 
@@ -30,72 +30,82 @@
     <main>  <!-- sección principal -->
         
         <section class="hero">     <!-- sección hero con imagen de fondo y texto centrado, nombrar la seccion grande y destacada -->
-            <h1>Viaja a través del tiempo</h1>
+            <!-- IMAGEN PENDIENTE: si el fondo del hero se define en css/estilos.css, ahí hay que cambiarlo después -->
+            <h1>Descubre rutas turísticas y vívelas</h1>
 
             <div class="buscador-flotante">
-                <p>Explora nuestro contenido y descubre más.</p>
-                <a href="hoteles_paquetes_viajes.html" class="btn-explorar">Ver destinos</a>
+                <p>Explora las rutas por categoría y encuentra la que más se parezca a ti.</p>
+                <a href="rutas_turisticas.html" class="btn-explorar">Buscar rutas</a>
             </div>
     
         </section>
 
         <section class="destinos_turisticos"> <!-- sección de contenido, sección de información -->
-            <h2>Reserve su viaje a través del tiempo</h1>
-            <h4>Descubre más sobre nuestros destinos históricos y futuristas, así como los paquetes de viaje que ofrecemos. Sumérgete en la historia y el futuro con nosotros.</h4>
+            <h2>Rutas destacadas</h2>
+            <h4>Conoce algunas de las rutas turísticas de Ruta Viva y entra a cada una para ver más detalles.</h4>
 
-            <div class="grid-destinos"> <!-- contenedor de la cuadrícula de destinos -->
+            <div class="grid-destinos"> <!-- contenedor de la cuadrícula de rutas destacadas -->
 
-                <a href="destinos_historicos.html" class="tarjeta-destino"> <!-- enlace a la página de destinos históricos -->
-                    <img src="img/coliseo destino.jpg">
-                    <span class="etiqueta">Camina por el Coliseo </span> <!-- etiqueta o texto parecido a  para el nombre del destino -->
+                <a href="rutas_turisticas.html" class="tarjeta-destino"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE: reemplazar por la imagen de Ruta Viva -->
+                    <img src="img/ruta-destacada-1.jpg" alt="Ruta destacada 1">
+                    <span class="etiqueta">Ruta destacada 1</span> <!-- etiqueta: nombre de la ruta (pendiente) -->
                 </a>
 
-                <a href="destinos_historicos.html" class="tarjeta-destino"> <!-- enlace a la página de destinos históricos -->
-                    <img src="img/piramide destino.jpg">
-                    <span class="etiqueta">Visita las pirámides recien construidas</span> <!-- etiqueta para el nombre del destino -->
+                <a href="rutas_turisticas.html" class="tarjeta-destino"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE: reemplazar por la imagen de Ruta Viva -->
+                    <img src="img/ruta-destacada-2.jpg" alt="Ruta destacada 2">
+                    <span class="etiqueta">Ruta destacada 2</span> <!-- etiqueta: nombre de la ruta (pendiente) -->
                 </a>
 
-                <a href="destinos_futuristicas.html" class="tarjeta-destino"> <!-- enlace a la página de destinos futuristas -->
-                    <img src="img/ciudad futurista destino.jpg">
-                    <span class="etiqueta">Vive una experiencia futurista</span> <!-- etiqueta o texto para el nombre del destino -->
+                <a href="rutas_turisticas.html" class="tarjeta-destino"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE: reemplazar por la imagen de Ruta Viva -->
+                    <img src="img/ruta-destacada-3.jpg" alt="Ruta destacada 3">
+                    <span class="etiqueta">Ruta destacada 3</span> <!-- etiqueta: nombre de la ruta (pendiente) -->
                 </a>
 
             </div>
         </section>
 
-        <section class="hoteles_destinos"> <!-- sección de hoteles de viaje -->
-            <h1>Hoteles en destinos unicos</h1>
+        <section class="hoteles_destinos"> <!-- ahora: sección de categorías de rutas (se conserva la clase CSS del proyecto anterior) -->
+            <h1>Rutas por categoría</h1>
 
-            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de hoteles -->
+            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de categorías -->
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel futurista bajo agua .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-cultural.jpg" alt="Categoría cultural">
+                    <span class="etiqueta">Cultural</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel futurista ciduad .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-naturaleza.jpg" alt="Categoría naturaleza">
+                    <span class="etiqueta">Naturaleza</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hoteles futuristas nave .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-gastronomica.jpg" alt="Categoría gastronómica">
+                    <span class="etiqueta">Gastronómica</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel medieval.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-aventura.jpg" alt="Categoría aventura">
+                    <span class="etiqueta">Aventura</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel piramides.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-historica.jpg" alt="Categoría histórica">
+                    <span class="etiqueta">Histórica</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
 
-                <a href="hoteles_paquetes_viajes.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel romano.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="rutas_turisticas.html" class="tarjeta-hotel"> <!-- enlace a la página de rutas turísticas -->
+                    <!-- IMAGEN PENDIENTE -->
+                    <img src="img/categoria-religiosa.jpg" alt="Categoría religiosa">
+                    <span class="etiqueta">Religiosa</span> <!-- etiqueta: nombre de la categoría (provisional) -->
                 </a>
             
             </div>
@@ -105,44 +115,34 @@
         <!-- Secccion de preguntas frecuentes, utilizacion de javaScript "mostrar o ocultar info",FAQ DESPEGABLE ------------------------------------------>
         <section class="preguntas-frecuentes">
             <h1>Preguntas frecuentes</h1>
-            <p>¿Tienes preguntas sobre nuestros viajes en el tiempo? Aquí encontrarás respuestas a las preguntas más comunes.</p>
+            <p>¿Tienes dudas sobre cómo usar Ruta Viva? Aquí encontrarás respuestas a las preguntas más comunes.</p>
             
             <div class="acordeon">
 
                 <!-- Envolver cada cada pregunta-respuesta en su propio contenedor para que sea mas manejable el javaScript-->
                 <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Cómo puedo reservar un viaje en el tiempo?</button>
-                    <p>Para reservar un viaje en el tiempo, simplemente haga clic en el destino que le interesa y siga las instrucciones para completar su reserva.</p>
+                    <button class="boton-acordeon">¿Qué es Ruta Viva?</button>
+                    <p>Ruta Viva es una plataforma donde los turistas pueden conocer y explorar rutas turísticas.</p>
                 </div>
                     
                 <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Qué medidas de seguridad se toman durante los viajes en el tiempo?</button>
-                    <p>Nuestros viajes en el tiempo están diseñados con la máxima seguridad en mente. Contamos con protocolos estrictos y tecnología avanzada para garantizar la seguridad de nuestros viajeros.</p>   
+                    <button class="boton-acordeon">¿Cómo me registro como turista?</button>
+                    <p>Haz clic en el botón "Ingresar" y completa el formulario para crear tu cuenta. Si ya tienes una, solo inicia sesión.</p>   
                 </div>
 
                 <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Puedo viajar al pasado y al futuro?</button>
-                    <p>Sí, ofrecemos viajes tanto al pasado como al futuro. Puede elegir entre una variedad de destinos históricos y futuristas según sus preferencias.</p>
+                    <button class="boton-acordeon">¿Cómo busco rutas turísticas por categoría?</button>
+                    <p>Entra a "Rutas turísticas" o elige una de las categorías de esta página. Allí podrás ver las rutas de cada categoría.</p>
                 </div>
 
                 <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Qué debo llevar conmigo en un viaje en el tiempo?</button>
-                    <p>Recomendamos llevar ropa y artículos apropiados para la época a la que viaja. También proporcionamos una lista de sugerencias antes de su viaje.</p>
+                    <button class="boton-acordeon">¿Puedo cambiar de categoría mientras exploro?</button>
+                    <p>Sí, puedes elegir otra categoría en cualquier momento para ver las rutas que le corresponden.</p>
                 </div>
 
                 <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Qué pasa si algo sale mal durante el viaje?</button>
-                    <p>Contamos con un equipo de soporte disponible las 24 horas para asistirlo en caso de cualquier eventualidad. Su seguridad es nuestra prioridad.</p>
-                </div>
-
-                <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Puedo cambiar mi destino después de reservar?</button>
-                    <p>Si desea cambiar su destino, póngase en contacto con nuestro equipo de atención al cliente. Haremos todo lo posible para acomodar su solicitud, sujeto a disponibilidad.</p>
-                </div>
-
-                <div class="item-acordeon">
-                    <button class="boton-acordeon">¿Existen restricciones de edad para los viajes en el tiempo?</button>
-                    <p>Sí, los viajeros deben tener al menos 18 años para reservar un viaje en el tiempo. Los menores de edad deben estar acompañados por un adulto responsable.</p>
+                    <button class="boton-acordeon">¿Qué pasa si olvidé mi contraseña?</button>
+                    <p>Por ahora, comunícate con el equipo de Ruta Viva a través del contacto que aparece al final de la página.</p>
                 </div>     
             
             </div>
@@ -151,14 +151,14 @@
     </main>
 
     <footer> 
-        <p>&copy; 2024 Chronos Travel. Todos los derechos reservados.</p>  <!-- Pie de página con derechos de autor -->
+        <p>&copy; 2026 Ruta Viva. Todos los derechos reservados.</p>  <!-- Pie de página con derechos de autor -->
         <nav class="footer-nav">
             <a href="index.html">Inicio</a>
-            <a href="destinos_historicos.html">Destinos históricos</a>
-            <a href="destinos_futuristas.html">Destinos futuristas</a>
-            <a href="reglas_viajes.html">Reglas para viajar</a>
+            <a href="rutas_turisticas.html">Rutas turísticas</a>
+            <a href="sobre_ruta_viva.html">Sobre Ruta Viva</a>
+            <a href="recomendaciones.html">Recomendaciones</a>
         </nav>
-        <p>Contáctanos:https://github.com/AlejandroCalle1/viajes-en-el-tiempo</p>
+        <p>Contáctanos: (enlace del repositorio o correo pendiente)</p>
     </footer>
 
 
