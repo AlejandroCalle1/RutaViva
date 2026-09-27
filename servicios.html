@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Paquetes de Viaje</title>
+    <title>Servicios - Ruta Viva</title>
 </head>
 
 <body>
     <header>
-         <h1><a href="index.html" class="titulo-link">Chronos travel</a></h1>
+         <h1><a href="index.html" class="titulo-link">Ruta Viva</a></h1>
 
 
         <nav> <!-- Barra de menu -->
             <ul> <!-- UL lista desordenada, LI crea cada item -->
-                <li><a href="destinos_historicos.html">Destinos históricos</a></li>
-                <li><a href="destinos_futuristas.html">Destinos futuristas</a></li>
-                <li><a href="hoteles_paquetes_viajes.html"> Hoteles y paquetes de viaje</a></li>
-                <li><a href="reglas_viajes.html">Reglas para viajes en el tiempo</a></li>
+                <li><a href="rutas_turisticas.html">Rutas turísticas</a></li>
+                <li><a href="sobre_ruta_viva.html">Sobre Ruta Viva</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
             </ul>
         </nav>
 
@@ -28,45 +28,51 @@
 
     <main>
         <section class="banner-pagina">
-            <span class="subtitulo-badge">Chronos Travel</span>
-            <h1>Hoteles y Paquetes de Viaje</h1>
+            <span class="subtitulo-badge">Ruta Viva</span>
+            <h1>Servicios</h1>
             <div class="linea-decorativa"></div>
-            <p>Explora nuestros paquetes de viaje y hoteles para una experiencia completa en tus viajes a través del tiempo.</p>
+            <p>Conoce los servicios que acompañan tu recorrido por las rutas turísticas.</p>
         </section>
 
-         <section class="hoteles_destinos"> <!-- sección de hoteles de viaje -->
-            <h1>Paquetes de Viaje</h1>
+         <section class="hoteles_destinos"> <!-- sección de servicios -->
+            <h1>Nuestros servicios</h1>
 
-            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de hoteles -->
+            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de servicios -->
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel futurista bajo agua .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel"> <!-- enlace pendiente de definir -->
+                    <!-- Reutiliza la imagen de la categoría cultural (ya definida en el index) -->
+                    <img src="img/categoria-cultural.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span> <!-- etiqueta pendiente, servicio por definir -->
                 </a>
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel futurista ciduad .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel">
+                    <!-- Reutiliza la imagen de la categoría naturaleza (ya definida en el index) -->
+                    <img src="img/categoria-naturaleza.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span>
                 </a>
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hoteles futuristas nave .jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel">
+                    <!-- Reutiliza la imagen de la categoría gastronómica (ya definida en el index) -->
+                    <img src="img/categoria-gastronomica.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span>
                 </a>
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel medieval.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel">
+                    <!-- Reutiliza la imagen de la categoría aventura (ya definida en el index) -->
+                    <img src="img/categoria-aventura.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span>
                 </a>
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel piramides.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel">
+                    <!-- Reutiliza la imagen de la categoría histórica (ya definida en el index) -->
+                    <img src="img/categoria-historica.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span>
                 </a>
 
-                <a href="" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
-                    <img src="img/hotel romano.jpg">
-                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                <a href="" class="tarjeta-hotel">
+                    <!-- Reutiliza la imagen de la categoría religiosa (ya definida en el index) -->
+                    <img src="img/categoria-religiosa.jpg" alt="Servicio">
+                    <span class="etiqueta">Próximamente</span>
                 </a>
             
             </div>
@@ -74,8 +80,11 @@
         </section>
 
     
+        <!-- Este formulario corresponde a una reserva de viaje. Las reservas son una funcionalidad
+             futura (no forman parte de los dos primeros requerimientos del backlog), así que el
+             formulario queda solo de referencia, sin conectarlo a ninguna lógica todavía. -->
         <section class="formulario-reserva">
-            <h2>Reserva tu viaje</h2>
+            <h2>Reserva tu recorrido (próximamente)</h2>
 
             <form> <!-- etiqueta que envuelve todos los campos del formulario -->
                 <label for ="nombre">Nombre completo:</label>  <!-- etiqueta para el campo de nombre, el atributo for se asocia con el id del input -->
@@ -84,18 +93,18 @@
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="destino">Destino:</label>
-                <select id="destino" name="destino" required> <!-- lista desplegable para seleccionar el destino -->
-                    <option value="">Seleccione un destino</option>
-                    <option value="roma">Roma Antigua</option>
-                    <option value="egipto">Egipto Antiguo</option>
-                    <option value="futurista">Ciudad Futurista</option>
-                    <option value="medieval">Castillo Medieval</option>
-                    <option value="futurista_bajo_agua">Ciudad futurista bajo el agua</option>
-                    <option value="futurista_nave">Ciudad futurista en nave espacial</option>
+                <label for="ruta">Ruta:</label>
+                <select id="ruta" name="ruta" required> <!-- lista desplegable para seleccionar la ruta -->
+                    <option value="">Seleccione una ruta</option>
+                    <option value="cultural">Ruta cultural</option>
+                    <option value="naturaleza">Ruta de naturaleza</option>
+                    <option value="gastronomica">Ruta gastronómica</option>
+                    <option value="aventura">Ruta de aventura</option>
+                    <option value="historica">Ruta histórica</option>
+                    <option value="religiosa">Ruta religiosa</option>
                 </select>
 
-                <label for="fecha">Fecha de viaje:</label>
+                <label for="fecha">Fecha del recorrido:</label>
                 <input type="date" id="fecha" name="fecha" required>
             
                 <button type="submit">Reservar</button> <!-- botón para enviar el formulario -->
@@ -104,14 +113,14 @@
     </main>
 
     <footer> 
-        <p>&copy; 2024 Chronos Travel. Todos los derechos reservados.</p>  <!-- Pie de página con derechos de autor -->
+        <p>&copy; 2026 Ruta Viva. Todos los derechos reservados.</p>  <!-- Pie de página con derechos de autor -->
         <nav class="footer-nav">
             <a href="index.html">Inicio</a>
-            <a href="destinos_historicos.html">Destinos históricos</a>
-            <a href="destinos_futuristas.html">Destinos futuristas</a>
-            <a href="reglas_viajes.html">Reglas para viajar</a>
+            <a href="rutas_turisticas.html">Rutas turísticas</a>
+            <a href="sobre_ruta_viva.html">Sobre Ruta Viva</a>
+            <a href="recomendaciones.html">Recomendaciones</a>
         </nav>
-        <p>Contáctanos:https://github.com/AlejandroCalle1/viajes-en-el-tiempo</p>
+        <p>Contáctanos: (enlace del repositorio o correo pendiente)</p>
     </footer>
 
     
